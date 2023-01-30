@@ -1,3 +1,3 @@
 FLASK_APP=sreality_flask
-FLASK_ENV=development
 FLASK_APP=sreality_flask
+FLASK_DEBUG=True
