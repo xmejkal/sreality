@@ -6,8 +6,17 @@
 </head>
 
 <body>
-    <h1>Welcome HTML : index.html</h1>
+    <h1>Scraped flats:</h1>
     <div>{{content}}</div>
+    {% for flat in flats %}
+    <div class="flat">
+        <p><b>#{{ flat.id }}</b></p>
+        <b>
+            <p class="name">{{ flat.name }}</p>
+        </b>
+        <img src="{{ flat.photo_url }}" alt="photo">
+    </div>
+    {% endfor %}
 </body>
 
 </html>
